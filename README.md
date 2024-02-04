@@ -1,10 +1,3 @@
-<p align="center">
-  <a href="https://github.com/x0sina/marzban-sub" target="_blank" rel="noopener noreferrer">
-    <img src="https://raw.githubusercontent.com/x0sina/marzban-sub/main/PreviewTemplate.png" title="Marzba-Sub"/>
-  </a>
-</p>
-<h1 align="center"/>قالب سابسکریپشن برای پنل  <a href="https://github.com/Gozargah/Marzban">مرزبان</a></h1>
-
 ## فهرست مطالب
 - [ویژگی‌ ها](#ویژگی-ها)
 - [مراحل نصب](#مراحل-نصب)
@@ -19,7 +12,6 @@
 - لینک دانلود اپلیکیشن های مورد نیاز
 - سه زبانه (روسی,انگلیسی,فارسی)
 - پیج ساب فانتزی با رنگ و لعاب زیبا
-- دریافت کانفیگ ها با آیکون کپی در آخر صفحه
 
 # مراحل نصب
 1. دانلود فایل template
