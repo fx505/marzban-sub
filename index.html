@@ -7,9 +7,10 @@
     <title>{{ user.username }} - Sub Info</title>
     <style>
         .asli {
-            background: url('https://4kwallpapers.com/images/walls/thumbs_3t/11574.jpeg') no-repeat;
+            background-color: rgba(56, 56, 56, 0.789);
+            /* background: url('https://4kwallpapers.com/images/walls/thumbs_2t/14318.jpg');
             background-position: center;
-            background-size: cover;
+            background-size: contain; */
         }
     </style>
     <style>
@@ -3196,13 +3197,13 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         }
 
         function setHrefs() {
-            document.getElementById("ios-streisand").href = `streisand://import/${fullUrl}`;
-            document.getElementById("ios-v2box").href = `v2box://install-sub?url=${fullUrl}&name=Sub`
-            document.getElementById("android-v2rayng").href = `v2rayng://install-config?url=${fullUrl}`;
+            // document.getElementById("ios-streisand").href = `streisand://import/${fullUrl}`;
+            // document.getElementById("ios-v2box").href = `v2box://install-sub?url=${fullUrl}&name=Sub`
+            // document.getElementById("android-v2rayng").href = `v2rayng://install-config?url=${fullUrl}`;
             document.getElementById("ios-singbox").href = `sing-box://import-remote-profile?url=${fullUrl}#Beytoote`;
             document.getElementById("android-singbox").href = `sing-box://import-remote-profile?url=${fullUrl}#Beytoote`;
-            document.getElementById("android-nekobox").href = `sn://subscription?url=${fullUrl}&name=Sub`;
-            document.getElementById("windows-clashverge").href = `clash://install-config?url=${fullUrl}`
+            // document.getElementById("android-nekobox").href = `sn://subscription?url=${fullUrl}&name=Sub`;
+            // document.getElementById("windows-clashverge").href = `clash://install-config?url=${fullUrl}`;
 
 
             // Android Apps
@@ -4901,7 +4902,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                                                         <p x-text="$t('clickForDownload')"
                                                                             class="text-sm mb-4 font-normal text-white lg:text-base">
                                                                         </p>
-                                                                        <a href="https://github.com/SagerNet/sing-box/releases/download/v1.8.4/SFA-1.8.4-universal.apk"
+                                                                        <a id="sing-box-octopus" href="https://github.com/SagerNet/sing-box/releases/download/v1.8.5/SFA-1.8.5-universal.apk"
                                                                             class="flex mb-4 items-center gap-x-4 w-full bg-gray-800 shadow-md px-3 py-2 rounded-3xl justify-between">
                                                                             <lord-icon class="w-8 h-8"
                                                                                 src="https://cdn.lordicon.com/albqovim.json"
@@ -5141,109 +5142,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="text-white bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 focus:ring-4 focus:outline-none focus:ring-teal-300 transition-all duration-300 font-medium rounded-2xl">
-                                                    <!-- Accordion item -->
-                                                    <div x-data="{ expanded: false }">
-                                                        <h2>
-                                                            <button style="direction: ltr;" id="faqs-title-01"
-                                                                type="button"
-                                                                class="flex items-center p-4 justify-between w-full text-left font-semibold"
-                                                                @click="expanded = !expanded" :aria-expanded="expanded"
-                                                                aria-controls="faqs-text-01">
-                                                                <div
-                                                                    class="flex items-center justify-start gap-x-2 text-lg sm:text-xl font-medium">
-                                                                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg">
-                                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                            d="M22.25 12.75V23.424L10.75 21.004V12.75H22.25ZM22.25 11.25V0.576L10.75 2.996V11.25H22.25ZM9.25 3.313L1.75 4.89V11.249H9.25V3.313ZM1.75 12.75H9.25V20.688L1.75 19.108V12.75Z"
-                                                                            fill="white" />
-                                                                    </svg>
-                                                                    <span x-text="$t('addClashVerge')">
-                                                                    </span>
-                                                                </div>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" stroke-width="1.5"
-                                                                    stroke="currentColor"
-                                                                    :class="{'!rotate-180': expanded}"
-                                                                    class="w-6 h-6 mx-6 transform origin-center transition duration-200 ease-out">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-                                                                </svg>
-                                                            </button>
-                                                        </h2>
-                                                        <div id="faqs-text-01" role="region"
-                                                            aria-labelledby="faqs-title-01"
-                                                            class="grid text-sm text-white overflow-hidden transition-all duration-300 ease-in-out"
-                                                            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
-                                                            <div class="overflow-hidden">
-                                                                <div class="p-4 pb-6">
-                                                                    <div
-                                                                        class="flex items-center rtl:mr-[-10px] ltr:ml-[-10px] md:rtl:mr-[-20px] md:ltr:ml-[-20px]">
-                                                                        <lord-icon
-                                                                            src="https://cdn.lordicon.com/mtdulhdc.json"
-                                                                            trigger="hover"
-                                                                            colors="primary:#fff,secondary:#fff"
-                                                                            class="w-12 h-12 md:w-20 md:h-20 ">
-                                                                        </lord-icon>
-                                                                        <h3 x-text="$t('downloadApp')"
-                                                                            class="text-xl font-black leading-none tracking-tight text-white md:text-2xl">
-                                                                        </h3>
-                                                                    </div>
-                                                                    <p x-text="$t('clickForDownload')"
-                                                                        class="text-sm mb-4 font-normal text-white lg:text-base">
-                                                                    </p>
-                                                                    <a href="https://github.com/zzzgydi/clash-verge/releases/download/v1.3.7/Clash.Verge_1.3.7_x64_en-US.msi"
-                                                                        class="flex mb-4 items-center gap-x-4 w-full bg-gray-800 shadow-md px-3 py-2 rounded-3xl justify-between">
-                                                                        <lord-icon class="w-8 h-8"
-                                                                            src="https://cdn.lordicon.com/albqovim.json"
-                                                                            trigger="loop" delay="1500"
-                                                                            colors="primary:#fff" state="intro">
-                                                                        </lord-icon>
-                                                                        <span x-text="$t('download')"></span>
-                                                                        <lord-icon class="w-8 h-8"
-                                                                            src="https://cdn.lordicon.com/albqovim.json"
-                                                                            trigger="loop" delay="1500"
-                                                                            colors="primary:#fff" state="intro">
-                                                                        </lord-icon>
-                                                                    </a>
-                                                                    <div
-                                                                        class="flex items-center rtl:mr-[-10px] ltr:ml-[-10px] md:rtl:mr-[-20px] md:ltr:ml-[-20px]">
-                                                                        <lord-icon
-                                                                            src="https://cdn.lordicon.com/vcoyflbj.json"
-                                                                            trigger="hover"
-                                                                            colors="primary:#fff,secondary:#fff"
-                                                                            class="w-12 h-12 md:w-20 md:h-20 ">
-                                                                        </lord-icon>
-                                                                        <h3 x-text="$t('addConfigs')"
-                                                                            class="text-xl font-black leading-none tracking-tight text-white md:text-2xl">
-                                                                            افزودن کانفیگ ها</h3>
-                                                                    </div>
-                                                                    <p x-text="$t('clickForAdd')"
-                                                                        class="text-sm mb-4 font-normal text-white lg:text-base">
-                                                                        برای اضافه کردن کانفیگ‌ ها داخل برنامه روی لینک
-                                                                        زیر کلیک کنید.</p>
-                                                                    <a id="windows-clashverge" class=" flex mb-4 items-center gap-x-4 w-full
-                                                                        bg-stone-800 shadow-md px-3 py-2 rounded-3xl
-                                                                        justify-between">
-                                                                        <lord-icon class="w-8 h-8"
-                                                                            src="https://cdn.lordicon.com/mrdiiocb.json"
-                                                                            trigger="loop" delay="2000"
-                                                                            colors="primary:#fff">
-                                                                        </lord-icon>
-                                                                        <span x-text="$t('AddtoApp')">افزودن به
-                                                                            برنامه</span>
-                                                                        <lord-icon class="w-8 h-8"
-                                                                            src="https://cdn.lordicon.com/mrdiiocb.json"
-                                                                            trigger="loop" delay="2000"
-                                                                            colors="primary:#fff">
-                                                                        </lord-icon>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -5252,14 +5151,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                         </div>
                         <p x-text="$t('macInfo')" class="text-lg font-normal mb-4 text-gray-300 lg:text-xl"></p>
                     </div>
-                    <h2 x-text="$t('generalAccess')"
+                    <!-- <h2 x-text="$t('generalAccess')"
                         class="my-4 text-3xl font-black leading-none tracking-tight text-white md:text-5xl">
 
-                    </h2>
-                    <p x-text="$t('generalAccessInfo')" class="text-lg font-normal mb-4 text-gray-300 lg:text-xl"></p>
-                    <div
+                    </h2> -->
+                    <!-- <p x-text="$t('generalAccessInfo')" class="text-lg font-normal mb-4 text-gray-300 lg:text-xl"></p> -->
+                    <!-- <div
                         class="collapse-arrow dark:text-white bg-gradient-to-r dark:from-gray-600 dark:via-gray-700 dark:to-gray-800 from-slate-100 via-slate-200 to-slate-300 text-black transition-all duration-300 font-medium rounded-2xl">
-                        <!-- Accordion item -->
+                        
                         <div x-data="{ expanded: false }">
                             <h2>
                                 <button id="faqs-title-01" type="button"
@@ -5306,7 +5205,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="flex mt-6 items-center justify-center gap-x-4 mb-4">
                         <button id="qrIconBtn"
